@@ -495,7 +495,7 @@ if (!Element.prototype.closest) {
         var offset = this.config.infinite ? this.data.window[size] : 0;
         this.container.style[size] = len * this.data.window[size] + "px"; // offset for scroll bars
 
-        this.wrapper.style["padding-" + (this.horizontal ? "bottom" : "right")] = this.bar + "px"; // reset scroll position (do this AFTER setting dimensions)
+        //this.wrapper.style["padding-" + (this.horizontal ? "bottom" : "right")] = this.bar + "px"; // reset scroll position (do this AFTER setting dimensions)
 
         this.wrapper[this.scrollAxis[this.axis]] = this.index * this.data.window[size] + offset;
         this.scrollSize = len * this.data.window[size] - this.data.window[size];
